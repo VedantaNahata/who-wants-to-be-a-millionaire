@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #e5e5e9;
+  background: #181818;
+  color: #fff;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 70vh;
+  font-size: 20px;
+}
+.qns {
+  border: 2px solid #6e6e6e;
+  padding: 10px;
+  margin: 30px;
+}
+.option {
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid #303030;
+  cursor: pointer;
+}
+.qns-number {
+  font-size: 30px;
+  margin: 20px;
+}
+.amountWon {
+  float: right;
+  font-size: 30px;
+  position: relative;
+  right: 30px;
+}
+#countdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.ansDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 25px;
+}
+.start-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-overBtn {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 0 40px;
+  border-radius: 40px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 15px;
+  transition: 0.5s;
+  position: relative;
+  bottom: 150px;
+}
+.congrats {
+  position: absolute;
+  top: 140px;
+  width: 550px;
+  height: 100px;
+  padding: 20px 10px;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: none;
+  font-family: 'Sigmar One', cursive;
+}
+.congrats-header {
+  transform-origin: 50% 50%;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 130px;
+  text-align: center;
+  width: 100%;
+}
+.congrats-headerTitle {
+  position: relative;
+  top: 180px;
+}
+.panel{
+  background: #ffffff1a;
+  padding: 10px;
+  border: 1px solid #ffffff1a;
+  border-radius: 25px;
+  transition: 0.7s;
+  color: #fff;
+  margin: 30px;
+}
+.panel:hover {
+  background: #ffffff33;
+  transition: 0.7s;
+  cursor: pointer;
+}
