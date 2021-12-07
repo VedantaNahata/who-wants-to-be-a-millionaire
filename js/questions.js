@@ -1,5 +1,4 @@
 let question = [];
-let temp;
 let qns = document.querySelector(".qns");
 let option1 = document.querySelector("#option1");
 let option2 = document.querySelector("#option2");
@@ -39,7 +38,6 @@ function sendRequest() {
     .then((response) => response.json())
     .then((data) => {
       question = data.results;
-      console.log(question);
 
       let options = question[qno].incorrect_answers;
       options.push(question[qno].correct_answer);
@@ -121,7 +119,6 @@ function sendRequest() {
       });
       option3.addEventListener("click", () => {
         if (option3.innerText == question[qno].correct_answer) {
-          console.log("correct");
           qno++;
           let numbersOfQns = document.querySelector(".qns-number");
           numbersOfQns.innerHTML = "Questions Answered Correctly: " + qno;
@@ -155,7 +152,6 @@ function sendRequest() {
       });
       option4.addEventListener("click", () => {
         if (option4.innerText == question[qno].correct_answer) {
-          console.log("correct");
           qno++;
           let numbersOfQns = document.querySelector(".qns-number");
           numbersOfQns.innerHTML = "Questions Answered Correctly: " + qno;
@@ -202,7 +198,6 @@ function sendRequest() {
         askExpert.style.display = "none";
       });
       fiftyfifty.addEventListener("click", () => {
-        console.log(question[qno].correct_answer);
         let fiftyfiftyCount = 1;
         for (let i = 0; i < options.length; i++) {
           if (options[i] !== question[qno].correct_answer) {
